@@ -24,14 +24,14 @@
 					     width="170" height="76">
 				</a>
 				<nav class="navigations">
-					<a href="./pages/contacts">Services</a>
-					<a href="./pages/contacts">Sale</a>
-					<a href="./pages/contacts">About us</a>
-					<a href="./pages/contacts">News</a>
-					<a href="./pages/contacts">Contacts</a>
+					<a href="./pages/contacts" id="services"></a>
+					<a href="./pages/contacts" id="sale"></a>
+					<a href="./pages/contacts" id="about_us"></a>
+					<a href="./pages/contacts" id="news"></a>
+					<a href="./pages/contacts" id="contacts"></a>
 				</nav>
 			</div>
-			<!--		Правый контен социальные сети и авторизация	-->
+			<!--		Правый контент социальные сети и авторизация	-->
 			<div class="right-content">
 				<nav class="socials">
 					<svg class="t-sociallinks__svg" width="30px" height="30px" viewBox="0 0 100 100" fill="none"
@@ -65,10 +65,15 @@
 						      fill="#000000"></path>
 					</svg>
 				</nav>
-				<button class="sign-up">Sign up</button>
+				<button class="sign-up" id="sign_up"></button>
 			</div>
 		</div>
 	</div>
 </header>
+<button id="ru">ru</button>
+<button id="kz">kz</button>
+<button id="en">en</button>
+<!-- Скрипт для смены языка -->
+<script src="./scripts/language.js"></script>
 </body>
 </html>
