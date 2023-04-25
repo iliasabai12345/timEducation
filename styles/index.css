@@ -66,12 +66,12 @@ nav.socials {
 	gap: 16px;
 }
 
-nav.socials > svg {
+nav.socials > a > svg {
 	cursor: pointer;
 	transition: .3s ease;
 }
 
-nav.socials > svg:hover {
+nav.socials > a > svg:hover {
 	transition: .3s ease;
 	scale: 1.2;
 }
@@ -83,6 +83,7 @@ nav.socials > svg:hover {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	gap: 10px;
 	border-radius: 20px;
 	padding: 0 1rem;
 	background: #009bf2;

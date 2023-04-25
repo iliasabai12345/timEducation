@@ -1,0 +1,25 @@
+.width {
+	width: 100%;
+}
+
+.height {
+	height: 100%;
+}
+
+.mobile {
+	display: none;
+}
+
+.desktop {
+	display: block;
+}
+
+@media (max-width: 768px) {
+	.desktop {
+		display: none;
+	}
+
+	.mobile {
+		display: block;
+	}
+}
