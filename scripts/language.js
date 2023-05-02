@@ -3,14 +3,14 @@ const languages = ['ru', 'kz', 'en'];
 
 languages.forEach(lng => {
     const lngBtn = document.getElementById(lng);
-    lngBtn.addEventListener('click', () => {
+    lngBtn && lngBtn.addEventListener('click', () => {
         changeLanguage(lng);
     })
 })
 
 function changeLanguage(lng) {
     async function getTranslates() {
-        translates = await fetch(`./i18n/${lng}.json`)
+        translates = await fetch(`./i18n/${lng}.json`) // ./i18n/ru.json
             .then(response => response.json())
     }
 

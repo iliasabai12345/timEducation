@@ -2,7 +2,7 @@
 	padding: 0;
 	margin: 0;
 	text-decoration: none;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -21,6 +21,7 @@ header.desktop {
 	left: 0;
 	right: 0;
 	z-index: 10;
+	background-color: #fff;
 }
 
 .logo {
@@ -102,4 +103,324 @@ nav.socials > a > svg:hover {
 .sign-up:hover {
 	transition: .3s ease;
 	opacity: 1;
+}
+
+/* Стили основного контента */
+
+main {
+	margin-top: 80px;
+	padding: 16px 0;
+}
+
+section {
+	position: relative;
+}
+
+.education-house {
+	width: 100%;
+	height: 395px;
+	background-image: url("https://static.tildacdn.com/tild3037-6339-4330-a637-376537626237/BradleyUniversity3.jpg");
+	position: relative;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+	color: #fff;
+	margin-bottom: 45px;
+}
+
+.education-house > h1 {
+	font-size: 52px;
+	text-align: center;
+}
+
+.education-house > p {
+	font-size: 20px;
+	text-align: center;
+}
+
+/* Education info blocks */
+
+.info {
+	display: flex;
+	width: 100%;
+	gap: 40px;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: 90px;
+}
+
+.info-box {
+	flex: 1;
+	min-height: 234px;
+	color: #fff;
+	box-sizing: border-box;
+	padding: 50px 30px;
+	cursor: pointer;
+	opacity: .9;
+	transition: .3s ease;
+	min-width: 220px;
+}
+
+.info-box:hover {
+	scale: 1.02;
+	transition: .3s ease;
+	opacity: 1;
+}
+
+.info-box > h2 {
+	font-size: 24px !important;
+	padding-bottom: 20px;
+}
+
+.info-box > p {
+	line-height: 24px;
+}
+
+.info-box:nth-child(1) {
+	background-color: #0085d0;
+}
+
+.info-box:nth-child(2) {
+	background-color: #00a3ff;
+}
+
+.info-box:nth-child(3) {
+	background-color: #60c6ff;
+}
+
+/* Education services */
+
+.services {
+
+}
+
+.services > h2 {
+	font-size: 42px;
+	text-align: center;
+	margin-bottom: 40px;
+	font-weight: 400 !important;
+}
+
+.services > p {
+	max-width: 560px;
+	font-size: 24px;
+	line-height: 1.5;
+	margin: 0 auto 90px;
+	text-align: center;
+}
+
+.services-blocks {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(560px, 560px));
+	grid-column-gap: 32px;
+	grid-row-gap: 16px;
+	justify-content: space-between;
+	padding-bottom: 135px;
+}
+
+.services-block {
+	min-height: 271px;
+	display: flex;
+	box-sizing: border-box;
+}
+
+.services-iq {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	flex: 1;
+	padding: 30px 20px;
+	background-color: rgb(242, 247, 250);
+}
+
+.services-iq > h3 {
+	font-size: 22px;
+}
+
+.services-iq > p {
+	font-size: 16px;
+	line-height: 1.55;
+}
+
+.services-iq > button {
+	color: #00a3ff;
+	font-weight: 700;
+	cursor: pointer;
+	font-size: 16px;
+	background-color: inherit;
+	border: none;
+	width: fit-content;
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	transition: .3s ease-in;
+}
+
+.services-iq > button:hover {
+	transition: .3s ease-in;
+	gap: 16px;
+}
+
+.services-pq {
+	max-width: 135px;
+	min-width: 135px;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.services-pq-1 {
+	background-image: url("https://thumb.tildacdn.com/tild3832-3563-4662-b037-343735323031/-/resize/400x600/-/format/webp/42198d838c5cc4a17d6a.jpg");
+	background-position-x: -205px;
+}
+
+.services-pq-2 {
+	background-image: url("https://thumb.tildacdn.com/tild6536-3636-4765-b334-626430313534/-/resize/400x600/-/format/webp/1550474908_book-3964.jpg");
+	background-position-x: -124px;
+}
+
+.services-pq-3 {
+	background-image: url("https://thumb.tildacdn.com/tild3365-3164-4264-b461-613731303136/-/cover/270x430/center/center/-/format/webp/shutterstock_1377054.jpg");
+}
+
+.services-pq-4 {
+	background-image: url("https://thumb.tildacdn.com/tild3631-3832-4730-b336-353765386232/-/cover/270x430/center/center/-/format/webp/noroot.png");
+}
+
+/* Sign up swiper banner */
+
+.sign-up-banner {
+	width: 100%;
+	height: 550px;
+	margin-bottom: 65px;
+}
+
+.sign-up-slide {
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.sign-up-slide-1 {
+	background-image: url("https://thumb.tildacdn.com/tild3436-3631-4931-a563-623864613433/-/format/webp/4708f03a8b098c7dbc71.jpg");
+}
+
+.sign-up-slide-2 {
+	background-image: url("https://thumb.tildacdn.com/tild3936-3965-4130-b066-366633373163/-/format/webp/zh_prof1.jpg");
+}
+
+.swiper-slide-backdrop {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.swiper-slide-backdrop > h2 {
+	font-size: 44px;
+	color: #fff;
+	text-align: center;
+	max-width: 600px;
+	margin: 120px auto 0;
+}
+
+.swiper-slide-backdrop > p {
+	text-align: center;
+	color: #fff;
+	font-size: 18px;
+	margin: 30px auto 0;
+}
+
+.swiper-slide-backdrop > a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	margin: 50px auto 0;
+	width: 178px;
+	height: 60px;
+	border-radius: 30px;
+	border: 2px solid #00a3ff;
+	background: inherit;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+}
+
+
+/* About us */
+
+.about {
+	padding-top: 65px;
+	padding-bottom: 65px;
+	background: #f2f7fa;
+}
+
+.about-wrapper {
+	display: flex;
+	gap: 30px;
+	justify-content: space-between;
+	margin-bottom: 56px;
+}
+
+.about-left {
+	flex: 1;
+}
+
+.about-left > h2 {
+	font-size: 42px;
+	margin-bottom: 28px;
+}
+
+.about-left > p {
+	line-height: 24px;
+}
+
+.about-right {
+	flex: 1;
+}
+
+.about-right > img {
+	width: 100%;
+}
+
+.about-benefits {
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+	flex-wrap: wrap;
+}
+
+.about-benefit {
+	flex: 1;
+	min-width: 250px;
+}
+
+.about-benefit > img {
+	width: 50px;
+	padding-bottom: 20px;
+}
+
+.about-benefit > h2 {
+	font-size: 17px;
+	padding-bottom: 20px;
+	line-height: 26px;
+}
+
+.about-benefit > p {
+	font-size: 15px;
+	line-height: 26px;
 }

@@ -12,6 +12,8 @@
 		box-shadow: 0 7px 6px -5px rgba(34, 60, 80, 0.2);
 		padding: 0 12px;
 		box-sizing: border-box;
+		background-color: #fff;
+		z-index: 10;
 	}
 
 	#menu-backdrop {
@@ -34,5 +36,43 @@
 		z-index: 30;
 		transition: .3s ease;
 		transform: translateX(0);
+		top: 0;
+	}
+
+	main {
+		margin-top: 50px;
+	}
+
+	.education-house > h1 {
+		font-size: 30px;
+	}
+
+	.education-house > p {
+		font-size: 18px;
+	}
+
+	.info {
+		width: auto;
+		gap: 16px;
+	}
+
+	.services-blocks {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(120px, 100%));
+		grid-column-gap: 32px;
+		grid-row-gap: 16px;
+		justify-content: center;
+	}
+
+	.swiper-slide-backdrop > h2 {
+		font-size: 24px;
+	}
+
+	.swiper-slide-backdrop > p {
+		font-size: 16px;
+	}
+
+	.about-wrapper {
+		flex-direction: column;
 	}
 }

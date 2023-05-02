@@ -7,19 +7,19 @@
 }
 
 .mobile {
-	display: none;
+	display: none !important;
 }
 
 .desktop {
-	display: block;
+	display: block !important;
 }
 
 @media (max-width: 768px) {
 	.desktop {
-		display: none;
+		display: none !important;
 	}
 
 	.mobile {
-		display: block;
+		display: block !important;
 	}
 }
