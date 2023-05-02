@@ -16,7 +16,31 @@ window.addEventListener("DOMContentLoaded", () => {
         }, 250)
     })
 });
-const swiper = new Swiper('.sign-up-banner', {
+
+const navigations = [
+    {id: 1, elementId: 'services', scrollTo: 'education_services'},
+    {id: 2, elementId: 'about_us', scrollTo: 'education_about'},
+]
+
+function addScrollEffects() {
+    document.getElementById('home').addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    })
+    navigations.forEach(item => {
+        const scrollTo = document.getElementById(item.scrollTo);
+        const addListener = document.getElementById(item.elementId);
+        addListener.addEventListener('click', (event) => {
+            event.preventDefault();
+            window.scrollTo({top: scrollTo.offsetTop - 100, behavior: "smooth"})
+        })
+    })
+}
+
+addScrollEffects();
+
+// Register swiper
+new Swiper('.sign-up-banner', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -43,3 +67,5 @@ const swiper = new Swiper('.sign-up-banner', {
         el: '.swiper-scrollbar',
     },
 });
+
+

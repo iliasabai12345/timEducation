@@ -366,6 +366,7 @@ section {
 .about {
 	padding-top: 65px;
 	padding-bottom: 65px;
+	margin-bottom: 100px;
 	background: #f2f7fa;
 }
 
@@ -423,4 +424,48 @@ section {
 .about-benefit > p {
 	font-size: 15px;
 	line-height: 26px;
+}
+
+/* Teachers */
+
+.teachers {
+
+}
+
+.teachers > h2 {
+	text-align: center;
+	font-size: 42px;
+	font-weight: 500 !important;
+	margin-bottom: 32px;
+}
+
+.teachers > p {
+	text-align: center;
+	font-size: 19px;
+	line-height: 30px;
+	max-width: 500px;
+	margin: 0 auto 90px;
+}
+
+.teachers-slider {
+	width: 100%;
+	height: 240px;
+	background-color: teal;
+	margin-bottom: 90px;
+}
+
+.teachers-slide {
+	width: 450px !important;
+}
+
+.all-teachers-btn {
+	display: block;
+	margin: 0 auto;
+	width: 206px;
+	height: 60px;
+	border-radius: 30px;
+	border: 2px solid #00a3ff;
+	background-color: inherit;
+	font-weight: bold;
+	cursor: pointer;
 }
