@@ -1,11 +1,9 @@
 let translates = {};
-const languages = ['ru', 'kz', 'en'];
 
-languages.forEach(lng => {
-    const lngBtn = document.getElementById(lng);
-    lngBtn && lngBtn.addEventListener('click', () => {
-        changeLanguage(lng);
-    })
+const languageBtn = document.getElementById('language');
+
+languageBtn.addEventListener('click', () => {
+    languageBtn.innerText === 'English' ? changeLanguage('ru') : changeLanguage('en');
 })
 
 function changeLanguage(lng) {

@@ -105,6 +105,11 @@ nav.socials > a > svg:hover {
 	opacity: 1;
 }
 
+.header-action-buttons {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
 /* Стили основного контента */
 
 main {
