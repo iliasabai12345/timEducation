@@ -20,6 +20,8 @@ window.addEventListener("DOMContentLoaded", () => {
 const navigations = [
     {id: 1, elementId: 'services', scrollTo: 'education_services'},
     {id: 2, elementId: 'about_us', scrollTo: 'education_about'},
+    {id: 3, elementId: 'news', scrollTo: 'education-news'},
+    {id: 4, elementId: 'contacts', scrollTo: ''}
 ]
 
 function addScrollEffects() {

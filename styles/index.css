@@ -572,7 +572,7 @@ section {
 
 .education-news > p {
 	max-width: 500px;
-	margin: 0 auto;
+	margin: 0 auto 50px;
 	text-align: center;
 	font-size: 18px;
 	line-height: 26px;
@@ -591,10 +591,63 @@ section {
 .news-block-top {
 	min-height: 200px;
 	max-height: 200px;
-	width: 100%;
-	background-image: url("https://thumb.tildacdn.com/tild3733-3733-4639-b632-393432353337/-/cover/600x400/center/center/-/format/webp/image.png");
-
+	width: 300px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
 }
 
-.news-block-top:nth-child(1) {
+.news-block-bottom {
+	height: 75px;
+	padding-top: 30px;
+	max-width: 300px;
+	line-height: 22px;
+}
+
+.news-more-detail {
+	border: 2px solid #00a3ff;
+	border-radius: 30px;
+	padding: 0 16px;
+	height: 30px;
+	background: transparent;
+	margin-top: 20px;
+}
+
+.news-block-top > .backdrop {
+	background: rgba(0, 0, 0, 0.3);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 20px;
+	font-size: 20px;
+	color: #fff;
+	font-weight: bold;
+	display: flex;
+	align-items: end;
+}
+
+.news-block-top-1 {
+	background-image: url("https://thumb.tildacdn.com/tild3733-3733-4639-b632-393432353337/-/cover/600x400/center/center/-/format/webp/image.png");
+}
+
+.news-block-top-2 {
+	background-image: url("https://static.tildacdn.com/tild6635-3365-4163-b061-303139653337/pool_decoration_09.jpg");
+}
+
+.news-block-top-3 {
+	background-image: url("https://thumb.tildacdn.com/tild6266-3630-4334-b662-363638626330/-/format/webp/895_0_m1-2.jpg");
+}
+
+.all-news-btn {
+	height: 56px;
+	border: 2px solid #00a3ff;
+	border-radius: 30px;
+	padding: 0 32px;
+	background: transparent;
+	cursor: pointer;
+	margin: 60px auto 0;
+	display: block;
+	font-weight: bold;
 }
