@@ -429,7 +429,7 @@ section {
 /* Teachers */
 
 .teachers {
-
+	margin-bottom: 120px;
 }
 
 .teachers > h2 {
@@ -449,13 +449,34 @@ section {
 
 .teachers-slider {
 	width: 100%;
-	height: 240px;
-	background-color: teal;
+	min-height: 240px;
 	margin-bottom: 90px;
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+	flex-wrap: wrap;
 }
 
 .teachers-slide {
-	width: 450px !important;
+	width: 240px;
+	min-height: 371px;
+}
+
+.teacher-description {
+	background: #f2f7fa;
+	padding: 16px;
+	box-sizing: border-box;
+	height: 131px;
+}
+
+.teacher-description > h3 {
+	font-size: 16px;
+	margin-bottom: 16px;
+}
+
+.teacher-description > p {
+	font-size: 14px;
+	line-height: 24px;
 }
 
 .all-teachers-btn {
@@ -468,4 +489,112 @@ section {
 	background-color: inherit;
 	font-weight: bold;
 	cursor: pointer;
+}
+
+
+/* Education sign up */
+
+.education-sign-up {
+	height: 530px;
+	width: 100%;
+	background-image: url("https://thumb.tildacdn.com/tild3433-6232-4437-a363-386234643031/-/format/webp/342504.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: -145px;
+	position: relative;
+}
+
+.sign-up-backdrop {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 5;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sign-up-backdrop > h2 {
+	font-size: 42px;
+	margin-top: 130px;
+	color: #fff;
+	text-align: center;
+}
+
+.sign-up-backdrop > p {
+	font-size: 24px;
+	max-width: 600px;
+	margin: 60px auto 0;
+	text-align: center;
+	color: #fff;
+}
+
+.sign-up-backdrop > form {
+	display: flex;
+	max-width: 740px;
+	margin: 30px auto 0;
+	gap: 1rem;
+}
+
+.sign-up-backdrop > form > button {
+	padding: 0 24px;
+	height: 56px;
+	background: #00a3ff;
+	border-radius: 30px;
+	border: none;
+	cursor: pointer;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.sign-up-backdrop > form > input {
+	flex: 1;
+	/*background-color: transparent;*/
+	padding-left: 1rem;
+	box-sizing: border-box;
+	border: 0 solid;
+	outline: none;
+}
+
+
+/*education-news*/
+
+.education-news {
+	margin-top: 120px;
+}
+
+.education-news > h2 {
+	font-size: 42px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.education-news > p {
+	max-width: 500px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 18px;
+	line-height: 26px;
+}
+
+.news-blocks {
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+.news-block {
+	height: 352px;
+}
+
+.news-block-top {
+	min-height: 200px;
+	max-height: 200px;
+	width: 100%;
+	background-image: url("https://thumb.tildacdn.com/tild3733-3733-4639-b632-393432353337/-/cover/600x400/center/center/-/format/webp/image.png");
+
+}
+
+.news-block-top:nth-child(1) {
 }
